@@ -14,7 +14,9 @@ class App extends Component {
     };
 
     buttonClickHandler() {
-   
+   	this.state.renderBall = true;
+	    this.state.posi = 0;
+	    this.state.ballPosition: { left: "0px" };
    }
     renderBallOrButton() {
 		if (this.state.renderBall) {
@@ -26,7 +28,9 @@ class App extends Component {
 
     // bind ArrowRight keydown event
     componentDidMount() {
-      
+      	App.addEventListener('keypress',(e)=>{
+		
+	});
     }
 
     render() {
